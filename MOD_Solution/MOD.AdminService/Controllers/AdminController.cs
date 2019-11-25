@@ -50,7 +50,7 @@ namespace MOD.AdminService.Controllers
 
 
 
-
+        [AllowAnonymous]
         [HttpGet("getSkills")]
         public IActionResult GetSkills()
         {
