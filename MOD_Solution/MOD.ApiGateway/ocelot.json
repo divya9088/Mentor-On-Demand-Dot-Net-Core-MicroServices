@@ -9,7 +9,8 @@
           "Port": 9050
         }
       ],
-      "UpstreamPathTemplate": "/authservice/{catchAll}"
+      "UpstreamPathTemplate": "/authservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
     },
     {
       "DownstreamPathTemplate": "/api/admin",
@@ -20,7 +21,9 @@
           "Port": 9051
         }
       ],
-      "UpstreamPathTemplate": "/adminservice"
+      "UpstreamPathTemplate": "/adminservice",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/admin/{catchAll}",
@@ -31,7 +34,9 @@
           "Port": 9051
         }
       ],
-      "UpstreamPathTemplate": "/adminservice/{catchAll}"
+      "UpstreamPathTemplate": "/adminservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/student",
@@ -42,7 +47,9 @@
           "Port": 9052
         }
       ],
-      "UpstreamPathTemplate": "/studentservice"
+      "UpstreamPathTemplate": "/studentservice",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/student/{catchAll}",
@@ -53,7 +60,9 @@
           "Port": 9052
         }
       ],
-      "UpstreamPathTemplate": "/studentservice/{catchAll}"
+      "UpstreamPathTemplate": "/studentservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/mentor",
@@ -64,7 +73,9 @@
           "Port": 9053
         }
       ],
-      "UpstreamPathTemplate": "/mentorservice"
+      "UpstreamPathTemplate": "/mentorservice",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/mentor/{catchAll}",
@@ -75,7 +86,9 @@
           "Port": 9053
         }
       ],
-      "UpstreamPathTemplate": "/mentorservice/{catchAll}"
+      "UpstreamPathTemplate": "/mentorservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
+
     }
   ],
   "GlobalConfiguration": {
