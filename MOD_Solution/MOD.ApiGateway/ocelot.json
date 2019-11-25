@@ -2,83 +2,83 @@
   "ReRoutes": [
     {
       "DownstreamPathTemplate": "/api/auth/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44358
+          "Port": 9050
         }
       ],
       "UpstreamPathTemplate": "/authservice/{catchAll}"
     },
     {
       "DownstreamPathTemplate": "/api/admin",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44359
+          "Port": 9051
         }
       ],
       "UpstreamPathTemplate": "/adminservice"
     },
     {
       "DownstreamPathTemplate": "/api/admin/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44359
+          "Port": 9051
         }
       ],
       "UpstreamPathTemplate": "/adminservice/{catchAll}"
     },
     {
       "DownstreamPathTemplate": "/api/student",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44357
+          "Port": 9052
         }
       ],
       "UpstreamPathTemplate": "/studentservice"
     },
     {
       "DownstreamPathTemplate": "/api/student/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44357
+          "Port": 9052
         }
       ],
       "UpstreamPathTemplate": "/studentservice/{catchAll}"
     },
     {
       "DownstreamPathTemplate": "/api/mentor",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44356
+          "Port": 9053
         }
       ],
       "UpstreamPathTemplate": "/mentorservice"
     },
     {
       "DownstreamPathTemplate": "/api/mentor/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44356
+          "Port": 9053
         }
       ],
       "UpstreamPathTemplate": "/mentorservice/{catchAll}"
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44355"
+    "BaseUrl": "http://localhost:9054"
   }
 }
