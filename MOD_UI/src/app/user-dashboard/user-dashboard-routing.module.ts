@@ -9,8 +9,8 @@ const routes: Routes = [
   { 
     path: '', component: UserDashboardComponent,
     children: [
-      { path: 'udashboard', loadChildren: './udashboard/udashboard.module#UdashboardModule',canActivate:[Gaurd4Guard] },
-      { path: 'confirm-request', loadChildren: './confirm-request/confirm-request.module#ConfirmRequestModule' },
+      { path: 'udashboard', loadChildren: './udashboard/udashboard.module#UdashboardModule' },
+      { path: 'confirm-request', loadChildren: './confirm-request/confirm-request.module#ConfirmRequestModule',canActivate:[Gaurd4Guard] },
       { path: 'completed-trainings', loadChildren: './completed-trainings/completed-trainings.module#CompletedTrainingsModule' },
       { path: 'user-notification',loadChildren:'./user-notification/user-notification.module#UserNotificationModule'},
       { path: 'current-trainings', loadChildren: './current-trainings/current-trainings.module#CurrentTrainingsModule' },
