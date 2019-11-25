@@ -45,7 +45,7 @@ namespace MOD.StudentService.Controllers
             return BadRequest(ModelState);
         }
 
-
+        [AllowAnonymous]
         [HttpGet("searchdata")]
         public IActionResult GetSearchData(string trainertechnology)
         {
