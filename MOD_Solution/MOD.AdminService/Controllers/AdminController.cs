@@ -74,7 +74,7 @@ namespace MOD.AdminService.Controllers
             return Ok(adminRepository.GetPayments());
         }
 
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public IActionResult GetUser(string id)
         {
